@@ -12,9 +12,6 @@ html {
   background-size: cover;
   height: 100%;
 }
-.about-wrapper {
-  padding: 10px;
-}
 .navbar {
   background-color: var(--main-color);
 }
@@ -53,11 +50,64 @@ h3 {
 .about-wrapper {
   padding: 15px;
 }
-.tex-ali-center {
+.tex-ali-cen {
   text-align: center;
 }
-.mar-top-15 {
-  margin-top: 15;
+.mar-tb-15 {
+  margin: 15px 0;
+}
+.col-2 {
+  margin: 0 5%;
+}
+.col-2 img {
+  margin: 0 auto;
+  display: block;
+}
+.col-2 h4 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+.col-2 p {
+  font-size: 10px;
+  text-align: center;
+}
+.faux-link {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.faux-link:hover {
+  cursor: pointer;
+}
+/* WORK */
+.work-wrapper {
+  padding: 15px;
+}
+.work-wrapper .col-sm-6 {
+  padding: 10px;
+}
+.work-wrapper img {
+  width: 100%;
+}
+.app-description {
+  margin-top: 15px;
+}
+/* CONTACT */
+.contact-wrapper p {
+  text-align: center;
+}
+.contact-wrapper a {
+  color: var(--main-color);
+}
+@media (max-width: 576px) {
+  .centered {
+    left: 20%;
+  }
+  .about-wrapper .col-sm-6 {
+    text-align: center;
+    margin: 5px 0;
+    font-size: 15px;
+  }
 }
 @media (min-width: 992px) {
   h1 {
@@ -70,9 +120,11 @@ h3 {
     font-size: 25px;
     width: 190px;
   }
-}
-@media (max-width: 576px) {
-  .centered {
-    left: 20%;
+  .work-wrapper img {
+    width: 75%;
+  }
+  .app-description {
+    text-align: center;
+    margin-top: 50px;
   }
 }
